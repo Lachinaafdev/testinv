@@ -1,0 +1,29 @@
+<mat-toolbar>
+  <mat-icon (click)="opened = !opened">menu</mat-icon>
+  <img
+    src="./assets/logo.png"
+    class="text-aling-center"
+    alt="logo ut"
+    width="150"
+    height="auto"
+  />
+  <span class="example-spacer"></span>
+  <span class="material-icons"> person </span>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav [(opened)]="opened" mode="push">
+    <div class="menu border">
+      <span class="material-icons"> business </span>
+      <a>Edificio</a>
+    </div>
+    <div class="menu">
+      <span class="material-icons"> backpack </span>
+      <a>O.Pedidos</a>
+    </div>
+    <div class="menu border">
+      <span class="material-icons"> error </span>
+      <a>Multa</a>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content><a>content</a> </mat-sidenav-content>
+</mat-sidenav-container>
